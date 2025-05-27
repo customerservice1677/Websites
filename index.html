@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Websites</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+    }
+  </script>
+</head>
+<body class="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 transition-colors duration-500">
+
+  <!-- Toggle Dark Mode -->
+  <div class="flex justify-end p-4">
+    <button id="toggleDark" class="bg-gray-200 dark:bg-gray-700 p-2 rounded-full">
+      🌙
+    </button>
+  </div>
+
+  <!-- Header -->
+  <header class="text-center py-10">
+    <h1 class="text-4xl font-bold">Welcome to Our Website Hub</h1>
+    <p class="text-lg mt-2 text-gray-600 dark:text-gray-400">Explore all our websites from one place.</p>
+  </header>
+
+  <!-- Projects Grid -->
+  <main class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
+    <!-- Template Project Card -->
+    <a href="https://www.blooketmaker.run.place" target="_blank" class="group rounded-2xl shadow-lg bg-white dark:bg-gray-800 p-6 hover:scale-105 transform transition duration-300">
+      <h2 class="text-xl font-semibold group-hover:text-blue-500 transition">Blooket Maker</h2>
+      <p class="text-gray-600 dark:text-gray-400 mt-2">Create Blookets with thousands of questions in the blink of an eye.</p>
+      <span class="text-blue-500 mt-4 inline-block group-hover:underline">Visit →</span>
+    </a>
+
+    <!-- Repeat this card for each website -->
+    <a href="https://www.uselesslink.run.place" target="_blank" class="group rounded-2xl shadow-lg bg-white dark:bg-gray-800 p-6 hover:scale-105 transform transition duration-300">
+      <h2 class="text-xl font-semibold group-hover:text-blue-500 transition">The Useless Button</h2>
+      <p class="text-gray-600 dark:text-gray-400 mt-2">Have fun clicking the useless button</p>
+      <span class="text-blue-500 mt-4 inline-block group-hover:underline">Visit →</span>
+    </a>
+
+    <a href="https://www.excusegenerator.run.place" target="_blank" class="group rounded-2xl shadow-lg bg-white dark:bg-gray-800 p-6 hover:scale-105 transform transition duration-300">
+      <h2 class="text-xl font-semibold group-hover:text-blue-500 transition">Excuse Generator</h2>
+      <p class="text-gray-600 dark:text-gray-400 mt-2">Create funny excuses for anything</p>
+      <span class="text-blue-500 mt-4 inline-block group-hover:underline">Visit →</span>
+    </a>
+    
+    <a href="https://www.excusegenerator.run.place" target="_blank" class="group rounded-2xl shadow-lg bg-white dark:bg-gray-800 p-6 hover:scale-105 transform transition duration-300">
+      <h2 class="text-xl font-semibold group-hover:text-blue-500 transition">Excuse Generator</h2>
+      <p class="text-gray-600 dark:text-gray-400 mt-2">Create funny excuses for anything</p>
+      <span class="text-blue-500 mt-4 inline-block group-hover:underline">Visit →</span>
+    </a>
+
+    
+    <a href="https://www.support-us.run.place" target="_blank" class="group rounded-2xl shadow-lg bg-white dark:bg-gray-800 p-6 hover:scale-105 transform transition duration-300">
+      <h2 class="text-xl font-semibold group-hover:text-blue-500 transition">Support Us</h2>
+      <p class="text-gray-600 dark:text-gray-400 mt-2">Help by visiting this site to learn how you can support us</p>
+      <span class="text-blue-500 mt-4 inline-block group-hover:underline">Visit →</span>
+    </a>
+
+    <!-- Add more cards below -->
+  </main>
+
+  <footer class="text-center text-sm mt-10 pb-6 text-gray-500 dark:text-gray-400">
+    &copy; 2025 Your Name. All rights reserved.
+  </footer>
+
+  <!-- JS for dark mode toggle -->
+  <script>
+    const btn = document.getElementById('toggleDark');
+    const body = document.body;
+    btn.addEventListener('click', () => {
+      body.classList.toggle('dark');
+    });
+  </script>
+
+</body>
+</html>
